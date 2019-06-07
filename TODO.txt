@@ -1,0 +1,27 @@
+. image handle (!), .load, .blit yo abstract SDL_LoakBMP
+
+. adapter design pattern for game entities, gameobjects an rooms
+use clean CreateManipulator
+
+. search for threadmanager which can alter viewport code. This means updating
+entities with a dx >= 1 after several loops. It's a UNIX signal or alarm for
+that matter.
+
+. game subsystems (a physics engine for example)
+
+. sort the entities in a list e.g. shift a value to see if they must be painted
+
+. dispatch all image handles/entity handles to game subsystems,
+use a list for the entities but do double dispatch (!)
+
+. gargoyle bully with "no pictures please" board in default-entity-image.bmp
+
+. directories for game/, networking/, server/, graphics/, AI etc
+
+. path finding engine
+
+. video-AI interaction
+
+. MILESTONES.txt should be updated as much as possible (This is an issue with
+author file)
+

@@ -1,0 +1,110 @@
+This is a page full of things that need to be done, accorded to hackers who
+want to work on them.
+
+There is also a TODO.txt file in this directory which contains more programmably
+complex features, which need to be done in the way they are escribed there.
+
+NOTES : There will come a document (e.g. a .pod6 file) which describes
+all game subsystems, for now look at the file lib/PaganVisions2.pm6
+
+MILESTONES
+==========
+
+M1
+--
+
+.[HALF-DONE] put graphics system into place with Entity, Sprite, EntityMove and 
+GameObject graphics loop in GameModel should work. Make default graphics.
+[holyghost]
+
+. [OPEN] test the graphics subsystem above
+[Xliff]
+
+. [OPEN] put AI system for Entity and EntityMove in place
+[holyghost]
+. [OPEN] write widgets and wigettree
+
+. [OPEN] Add tests for the game systems, code 
+. [OPEN] Add docs for the new final systems, code to lib/PaganVisions2.pm6
+
+M2
+--
+
+. [OPEN] write viewport code for entity dispatching
+[holyghost]
+. [OPEN] write collision detection code with in-game dispatching
+[holyghost]
+. [OPEN] write a talk system
+. [OPEN] write an inventory
+. [OPEN] write a spell book and priest spellbook
+. [OPEN] write an combat system
+. [OPEN] write a physics engine 
+[holyghost]
+
+. [OPEN] search graphics at e.g. http://opengameart.org, http://rpgrevolution.com
+[holyghost]
+. [OPEN] make our own graphics
+[holyghost]
+
+. [OPEN] Add tests for the game systems, code 
+. [OPEN] Add docs for the new final systems, code to lib/PaganVisions2.pm6
+
+M3
+--
+
+
+. [OPEN] write a horizontal side-scroller GameModel system, make graphics for it
+for example Super Castlevania
+. [OPEN] write a vertical side-scroller GameModel system, make graphics for it
+for example Ultima 6 
+. [OPEN] write a isometric game system
+for example Myth Drannor
+. [OPEN] write several tile engines
+for example for NES (Nintendo Entertainment system)
+. [OPEN] write a overhead view game system
+for example Diablo 3
+. [OPEN] write a Sierra (Sierra-On-Line) adventure system
+for example for King's Quest 4
+. [OPEN] update widgets for all of the above, we use SDL2
+
+. [OPEN] Make a nethack/rogue/angband/zangband game system
+
+. [OPEN] Add tests for the game systems, code 
+. [OPEN] Add docs for the new final systems, code to lib/PaganVisions2.pm6
+
+M4
+__
+
+. Bug squashing of each game subsystem, collision detection and viewport code
+on rooms.
+
+M5
+--
+
+. [OPEN] make a MacOS X, Linux or Windows application from our code
+. [OPEN] port system to several OS or embedded systems e.g. a Nintendo 64 bit 
+. [OPEN] Start 3D engine work with OpenGL
+. [OPEN] Start 3D engine work without OpenGL (soft or hard)
+. [OPEN] Make a flight sim in 3D
+
+. [OPEN] Add tests for the game systems, code 
+. [OPEN] Add docs for the new final systems, code to lib/PaganVisions2.pm6
+
+M6
+--
+
+[OPEN] Extend the GameModel to client-server code with a networking subdirectory
+. [OPEN] Add tests for the game systems, code 
+. [OPEN] Add docs for the new final systems, code to lib/PaganVisions2.pm6
+
+
+M7
+--
+
+. [OPEN] extend graphics system to other things than SDL2, SDL2::Raw, SDL
+. [OPEN] add libguile as a scripting language (Scheme)
+. [OPEN] Add tests for the game systems, code 
+. [OPEN] Add docs for the new final systems, code to lib/PaganVisions2.pm6
+
+
+TBA

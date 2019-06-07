@@ -1,0 +1,52 @@
+=begin Pagan Visions 2 
+
+=head1 Intro
+A game made with SDL2 as a graphics kit, coded in Perl 6.
+
+=head2 Game subsystem Documentation
+
+=head3 The game's abstract class : GameModel.pm6
+
+This is the main class which holds asa superclass for any of the game systems
+it can feature. Most instances field 4 lists, for Entity, EntityMove, GameObject
+and Sprite. 
+
+An Entity is a static (it does not move) instance derived from it which displays
+itself in a repetitive manner. A Gnome sitting on a bench playing with a
+yo-yo would be an example. You can talk to entities and as far as they are
+Artificial Life they are mostly living things which you can interact with
+by using spells, priest spells or items on them. 
+
+An EntityMove is a moving entity. Entities which are attacked might become
+a EntityMove instance, they are added and removed from the appropriate lists
+of entities. Moving Entities are the same as a Entity except that they do not 
+remain in place over the plane, world or room.
+
+A GameObject is a static Entity (it is not subclassed from that, however) such
+as a Healing Potion. It does not speak but can againj become an Entity by
+list adaption (remove and add to the relevant entity list) so you get a
+talking potion by using a spell on it.
+
+A Sprite is a non-collidable, non-hackable thing. A butterfly which is just
+there for game animation or beautification is a Sprite subclass. A Sprite
+does not interact with the Player and Non-Player Characters.
+
+=head4 Graphics Subsystem
+
+Inside each Entity, EntityMove, GameObject and Sprite is a method for updating
+it during gameplay, each main-loop cycle in the Game.pm6 it updates and paints
+itself by looping over lists of the four relevant types of game instances.
+
+=head5 Rogue0.pm6
+
+This is the scratchpad game which tests a roguelike using Rooms (Room.pm6) 
+such as RoomFields1.pm6.
+
+
+
+=head100 Outro
+
+Thanks for the support on #perl6, if you want to find the developers behind
+this game, maybe give us a beer at the irc channel #perl6 on irc.freenode.net
+
+=end
